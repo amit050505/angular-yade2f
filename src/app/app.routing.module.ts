@@ -4,8 +4,8 @@ import { HomeComponent }  from './home/home.component';
 import { ActivityComponent }  from './activity/activity.component';
 
 const appRoutes: Routes = [
-  { path: 'my-article', component: HomeComponent },
-  { path: 'article',        component: ActivityComponent },
+  { path: 'home', component: HomeComponent },
+  { path: 'activity',        component: ActivityComponent },
   { path: '',   redirectTo: '/article', pathMatch: 'full' }
 ];
 
