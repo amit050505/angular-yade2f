@@ -8,5 +8,9 @@ import { DataService } from './data.service';
 })
 export class AppComponent  {
   name = 'Angular';
-
+     constructor(private dataService: DataService) {}
+  ngOnInit() {
+   localStorage.setItem('articleData', '');
+   this.dataService.setDataToLocal();
+  }
 }

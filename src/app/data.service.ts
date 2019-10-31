@@ -18,6 +18,8 @@ export class DataService {
       {
         articleName: "Propel yourself, chart your own destiny",
         articleId: "1",
+        author: "Datta Sanghvi",
+        authorId: 343,
         description: "Now, astrology is simply a way of plotting certain possibilities in a person’s life. If i look at you, based on your karmic trajectory which is immediately apparent to me, it is possible for me to say, “OK, given your natural tendencies, this is the direction your life will take.” There is nothing profound about this. Astrology is simply a possible road map for your life that takes into account your tendencies and inherited traits.",
         dislikes: [
           {

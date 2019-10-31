@@ -1,12 +1,10 @@
 <div *ngFor="let data of articleData">
 
 <mat-card class="example-card">
-  <mat-card-header>
-    <div mat-card-avatar class="example-header-image"></div>
-    <mat-card-title>Shiba Inu</mat-card-title>
-    <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+  <mat-card-header>  
+    <mat-card-title><h5>{{data.articleName}}</h5></mat-card-title>
   </mat-card-header>
-  <h2>header</h2>
+
   <mat-card-content>
     <p>
       The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
@@ -14,9 +12,19 @@
       bred for hunting.
     </p>
   </mat-card-content>
+ 
   <mat-card-actions>
-    <button mat-button>LIKE</button>
-    <button mat-button>SHARE</button>
+        <a href="#" class="btn btn-sm btn-primary btn-lg">
+          <span class="glyphicon glyphicon-thumbs-up"></span> Like
+        </a>
+        &nbsp; 
+        <a href="#" class="btn  btn-sm btn-info btn-lg">
+          <span class="glyphicon glyphicon-thumbs-up"></span> Deslike
+        </a>
+         &nbsp; 
+        <a href="#" class="btn  btn-sm btn-info btn-lg">
+          <span class="glyphicon glyphicon-thumbs-up"></span> Share
+        </a>
   </mat-card-actions>
 </mat-card>
 
