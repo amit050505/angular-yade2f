@@ -11,9 +11,9 @@ export class DataService {
   }*/
 
   public setDataToLocal() {
-    // if (localStorage.getItem("articleData") != '') {
-    //   return true;
-    // }
+    if (localStorage.getItem("articleData") != '') {
+      return true;
+    }
     const data = [
       {
         articleName: "Propel yourself, chart your own destiny",
