@@ -5,8 +5,9 @@
     <mat-card-title>
       <h5>{{data.articleName}}</h5>
     <div class="blog-info">
-    likes {{likeCounter(data.articleId)}} | deslikes {{deslikeCounter(data.articleId)}}
-     | Comments {{commentsCounter(data.articleId)}}
+    <i class="fa fa-thumbs-up" aria-hidden="true"></i> {{likeCounter(data.articleId)}}
+    <i class="fa fa-thumbs-down" aria-hidden="true"></i> {{deslikeCounter(data.articleId)}}
+    <i class="fa fa-share-alt" aria-hidden="true"></i> {{commentsCounter(data.articleId)}}
     </div>
     </mat-card-title>
   </mat-card-header>
@@ -22,16 +23,15 @@
  
   <mat-card-actions>
         <div class="btn btn-sm btn-primary btn-lg" (click)="onLike(data.articleId)">
-          <span class="glyphicon glyphicon-thumbs-up"></span> Like 
-          <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+          <i class="fa fa-thumbs-o-up" aria-hidden="true"></i> Like
         </div>
         &nbsp; 
         <a href="#" class="btn  btn-sm btn-info btn-lg" (click)="onDeslike(data.articleId)">
-          <span class="glyphicon glyphicon-thumbs-up"></span> Deslike
+          <i class="fa fa-thumbs-o-down" aria-hidden="true"></i> Deslike
         </a>
          &nbsp; 
         <a href="#" class="btn  btn-sm btn-info btn-lg">
-          <span class="glyphicon glyphicon-thumbs-up"></span> Share
+           <i class="fa fa-share-alt" aria-hidden="true"></i> Share
         </a>
   </mat-card-actions>
 </mat-card>
