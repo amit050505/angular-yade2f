@@ -5,10 +5,12 @@ import { HttpClientModule, HttpClient, HttpHandler } from '@angular/common/http'
 import { AppComponent } from './app.component';
 import { DataService } from './data.service.ts'
 import { AppRoutingModule } from './app.routing.module';
+import { HomeComponent } from './home/home.component';
+import { ActivityComponent } from './activity/activity.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, AppRoutingModule ],
-  declarations: [ AppComponent ],
+  declarations: [ AppComponent, HomeComponent, ActivityComponent ],
   bootstrap:    [ AppComponent ],
   providers: [ HttpClientModule, HttpClient, HttpHandler, DataService]
 })
