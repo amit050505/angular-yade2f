@@ -40,23 +40,17 @@ export class DataService {
         ],
         imagepath: "src/images/noImage.jpg",
         comments: [
-          {
+           {
             commentsId: "1",
             authorId: 3,
-            description: "How are you",
-            author: "Nikki"
+            description: "Write something of this sort on Mohammad, his eife, Ayesha, the Khalifas etc anc then see what happens to you.",
+            author: "Nikki Shukla"
           },
           {
-            commentsId: "1",
-            authorId: 3,
-            description: "How are you",
-            author: "Nikki"
-          },
-          {
-            commentsId: "1",
-            authorId: 3,
-            description: "How are you",
-            author: "Nikki"
+            commentsId: "2",
+            authorId: 4,
+            description: "Why dont you write about other religions God for a change?",
+            author: "Sam jones"
           }
         ],
         likes: [
@@ -92,9 +86,9 @@ export class DataService {
         comments: [
           {
             commentsId: "1",
-            authorId: 1,
-            description: "What about you",
-            author: "John"
+            authorId: 3,
+            description: "Write something of this sort on Mohammad, his eife, Ayesha, the Khalifas etc anc then see what happens to you.",
+            author: "Nikki Shukla"
           }
         ],
         likes: [
