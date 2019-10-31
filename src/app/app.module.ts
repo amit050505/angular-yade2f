@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule, HttpClient, HttpHandler } from '@angular/common/http';
 import { AppComponent } from './app.component';
-import { DataService } from './data.service.ts'
 import { AppRoutingModule } from './app.routing.module';
 import { HomeComponent } from './home/home.component';
 import { ActivityComponent } from './activity/activity.component';
@@ -12,7 +11,7 @@ import { ActivityComponent } from './activity/activity.component';
   imports:      [ BrowserModule, FormsModule, AppRoutingModule ],
   declarations: [ AppComponent, HomeComponent, ActivityComponent ],
   bootstrap:    [ AppComponent ],
-  providers: [ HttpClientModule, HttpClient, HttpHandler, DataService]
+  providers: [ HttpClientModule, HttpClient]
 })
 export class AppModule { }
  
