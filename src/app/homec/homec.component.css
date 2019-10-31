@@ -23,8 +23,7 @@
 .blog-info {
   color: rgb(72, 115, 145);
   /* padding-left: 16px; */
-}
-.mat-card-header {
-  /* background-color: #e0ebdf; */
-  /* border-bottom: solid 1px rgb(209, 201, 201); */
 } 
+.mat-card-footer {
+  padding: 0px 0px 20px 20px;
+}
