@@ -6,7 +6,7 @@ import { ActivityComponent }  from './activity/activity.component';
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'activity',        component: ActivityComponent },
-  { path: '',   redirectTo: '/article', pathMatch: 'full' }
+  { path: '',   redirectTo: '/activity', pathMatch: 'full' }
 ];
 
 @NgModule({
