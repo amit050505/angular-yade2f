@@ -17,3 +17,11 @@
 .mat-card-actions {
   margin-left: 0px;
 }
+.blog-info {
+  color: rgb(72, 115, 145);
+  /* padding-left: 16px; */
+}
+.mat-card-header {
+  /* background-color: #e0ebdf; */
+  /* border-bottom: solid 1px rgb(209, 201, 201); */
+} 
