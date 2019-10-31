@@ -57,4 +57,71 @@ export class HomecComponent implements OnInit {
     return item[0].comments.length;  
   }
 
+  onLike(id) {
+    let counter = 0;
+    let flag = false;
+    this.articleData.forEach(childObj => {
+      if (id == childObj.articleId) {
+        const dislikes = childObj.dislikes;
+        dislikes.forEach((dLike, index) => {
+          if (dLike.authorId == this.userId) {
+            dislikes.splice(index, 1);
+          }
+        });
+        this.articleData[counter].dislikes = dislikes;
+
+        const obj = {
+          likesId: "1",
+          authorId: this.userId,
+          author: this.userName
+        };
+        childObj.likes.forEach((data, index) => {
+          if (data.authorId == this.userId) {
+            alert("You alreday liked.");
+            flag = true;
+          }
+        });
+        if (!flag) {
+          this.articleData[counter].likes.push(obj);
+        }
+      }
+      counter++;
+    });
+
+    this.setLocalStorage();
+  }
+
+  onDisLike(id) {
+    let counter = 0;
+    let flag = false;
+    this.articleData.forEach(childObj => {
+      if (id == childObj.articleId) {
+        const likes = childObj.likes;
+        likes.forEach((dLike, index) => {
+          if (dLike.authorId == this.userId) {
+            likes.splice(index, 1);
+          }
+        });
+        this.articleData[counter].likes = likes;
+
+        const obj = {
+          likesId: "1",
+          authorId: this.userId,
+          author: this.userName
+        };
+        childObj.dislikes.forEach((data, index) => {
+          if (data.authorId == this.userId) {
+            alert("You alreday disliked.");
+            flag = true;
+          }
+        });
+        if (!flag) {
+          this.articleData[counter].dislikes.push(obj);
+        }
+      }
+      counter++;
+    });
+    this.setLocalStorage();
+  }
+
 }
