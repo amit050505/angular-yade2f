@@ -69,7 +69,7 @@ export class DataService {
       {
         articleName: "Ideology of terror outlives ideologue",
         articleId: "2",
-        description: "",
+        description: "Prime Minister Narendra Modi’s official visit to Saudi Arabia comes at a pivotal moment for New Delhi and Riyadh. For long, ties between the two sides have been akin to a buyer-seller relationship with Saudi oil fuelling the Indian economy. But today the Saudi leadership, especially under Crown Prince Mohammed bin Salman (MBS), is looking to diversify its engagements with the world and elevate its ties with key countries such as India. This is because Riyadh knows that the days of the exclusively petrodollar funded Saudi state are numbered due to the advent of shale oil and renewables.Hence, Riyadh is looking to completely transform its economy under the rubric of its Vision 2030 that envisages modern manufacturing, technology and service sectors. And that means linking Saudi industry to global value chains and preparing Saudi citizens – including Saudi women – for 21st century workplaces. ",
         dislikes: [
           {
             likesId: "1",
