@@ -45,12 +45,6 @@ export class DataService {
             authorId: 3,
             description: "How are you",
             author: "Nikki"
-          },
-          {
-            commentsId: "2",
-            authorId: 4,
-            description: "I am Fine",
-            author: "Sam"
           }
         ],
         likes: [
@@ -89,12 +83,6 @@ export class DataService {
             authorId: 1,
             description: "What about you",
             author: "John"
-          },
-          {
-            commentsId: "2",
-            authorId: 2,
-            description: "Its good",
-            author: "Reddy"
           }
         ],
         likes: [

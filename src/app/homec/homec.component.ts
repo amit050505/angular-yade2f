@@ -21,12 +21,40 @@ export class HomecComponent implements OnInit {
 
   getArticle() {
     this.articleData = JSON.parse(localStorage.getItem("articleData"));
-    console.log('getartr');
-    console.log(this.articleData);
+  
   }
 
   setLocalStorage() {
     localStorage.setItem("articleData", JSON.stringify(this.articleData));
+  }
+  onLike(artId) {
+
+
+
+  }
+
+  onDeslike(artId) {
+
+  }
+  likeCounter(artId) {
+    const item = this.articleData.filter(function(v){
+    return v.articleId === artId;
+      })
+    return item[0].likes.length;    
+  }
+
+  deslikeCounter(artId) {
+    const item = this.articleData.filter(function(v){
+    return v.articleId === artId;
+      })
+    return item[0].dislikes.length;    
+  }
+
+  commentsCounter(artId) {
+    const item = this.articleData.filter(function(v){
+    return v.articleId === artId;
+      })
+    return item[0].comments.length;  
   }
 
 }
