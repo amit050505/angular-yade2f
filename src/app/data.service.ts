@@ -16,13 +16,13 @@ export class DataService {
     }
     const data = [
       {
-        articleName: "Why Developer",
+        articleName: "Propel yourself, chart your own destiny",
         articleId: "1",
-        description: "Technology is extremely fast moving, so developers need to be able to learn new programming languages and technologies, and adapt to the continually changing environment. Alongside learning about technology, developers will often learn about the business they are working in as well.",
+        description: "Now, astrology is simply a way of plotting certain possibilities in a person’s life. If i look at you, based on your karmic trajectory which is immediately apparent to me, it is possible for me to say, “OK, given your natural tendencies, this is the direction your life will take.” There is nothing profound about this. Astrology is simply a possible road map for your life that takes into account your tendencies and inherited traits.",
         dislikes: [
           {
             likesId: 1,
-            author: "John",
+            author: "Sadhguru Jaggi Vasudev",
             authorId: 1
           },
           {
@@ -65,9 +65,9 @@ export class DataService {
         ]
       },
       {
-        articleName: "Developers Need",
+        articleName: "Ideology of terror outlives ideologue",
         articleId: "2",
-        description: "If you strive and don’t really care about computers all that much, then software engineering will not be a good choice, because in order to be good, you need to spend countless, countless hours refining your craft, keeping up with the industry at large, getting to know every single little detail you should know to do your work properly.",
+        description: "That a terrorist chief who ordered large-scale destruction of life and property and justified enslavement of people, all in the name of faith, will no longer be able to cause mayhem is a matter of satisfaction. But it would be a mistake to imagine that the killing of Abu Bakr al-Baghdadi represents victory over terror carried out in the name of Islam.",
         dislikes: [
           {
             likesId: "1",
