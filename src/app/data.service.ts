@@ -69,7 +69,7 @@ export class DataService {
       {
         articleName: "Ideology of terror outlives ideologue",
         articleId: "2",
-        description: "That a terrorist chief who ordered large-scale destruction of life and property and justified enslavement of people, all in the name of faith, will no longer be able to cause mayhem is a matter of satisfaction. But it would be a mistake to imagine that the killing of Abu Bakr al-Baghdadi represents victory over terror carried out in the name of Islam.",
+        description: "",
         dislikes: [
           {
             likesId: "1",
@@ -88,7 +88,7 @@ export class DataService {
             commentsId: "1",
             authorId: 3,
             description: "Write something of this sort on Mohammad, his eife, Ayesha, the Khalifas etc anc then see what happens to you.",
-            author: "Nikki Shukla"
+            author: "Adam levine"
           }
         ],
         likes: [
