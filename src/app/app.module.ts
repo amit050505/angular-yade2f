@@ -4,8 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule, HttpClient, HttpHandler } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app.routing.module';
-import { HomeComponent } from './home/home.component';
-import { ActivityComponent } from './activity/activity.component';
+import { HomecComponent } from './homec/homec.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, AppRoutingModule ],

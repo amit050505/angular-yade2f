@@ -4,8 +4,8 @@ import { HomeComponent }  from './home/home.component'
 
 
 const appRoutes: Routes = [
-  { path: 'home', component: HomeComponent },
-  { path: 'activity', component: ActivityComponent },
+  { path: 'home', component: HomecComponent },
+  { path: 'activity', component:  },
   { path: '',   redirectTo: '/activity', pathMatch: 'full' }
 ];
 
