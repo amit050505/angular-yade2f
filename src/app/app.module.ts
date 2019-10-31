@@ -11,10 +11,10 @@ import { MatCardModule } from '@angular/material/card';
 import { DataService} from './data.service';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatInputModule } from '@angular/material/input';
-
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule, AppRoutingModule, MatCardModule, MatExpansionModule, BrowserAnimationsModule, MatInputModule ],
+  imports:      [ BrowserModule, FormsModule, AppRoutingModule, MatCardModule, MatExpansionModule, BrowserAnimationsModule, MatInputModule, MatButtonModule ],
   declarations: [ AppComponent, HomecComponent, ActivitycComponent ],
   bootstrap:    [ AppComponent ],
   providers: [ HttpClientModule, HttpClient, HttpHandler, DataService ]
