@@ -47,11 +47,16 @@
     <div *ngFor="let comment of data.comments">
       <b>{{comment.author}}</b>
       <p><i>{{comment.description}}</i></p>
-    </div>
- 
-
+    </div> 
+    <form class="example-form">
+      <mat-form-field class="example-full-width">
+        <textarea matInput placeholder="Leave a comment"></textarea>
+      </mat-form-field>
+    </form>
   </mat-expansion-panel>
 </mat-accordion>
+
+
 
  </mat-card-footer>
 </mat-card>
