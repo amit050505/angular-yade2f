@@ -19,6 +19,7 @@
       A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
       bred for hunting.
     </p>
+    
   </mat-card-content>
  
   <mat-card-actions>
@@ -33,10 +34,24 @@
         <div href="#" class="btn  btn-sm btn-info btn-lg">
            <i class="fa fa-share-alt" aria-hidden="true"></i> Share
         </div>
-  </mat-card-actions>
+  </mat-card-actions>  
   <mat-card-footer>
-    This is card Footer
+    
+ <mat-accordion>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        People are talking about this...
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <div *ngFor="let comment of data.comments">
+      <b>{{comment.author}}</b>
+      <p>{{comment.description}}</p>
+    </div>
+
+  </mat-expansion-panel>
+</mat-accordion>
+
  </mat-card-footer>
 </mat-card>
-
 </div>

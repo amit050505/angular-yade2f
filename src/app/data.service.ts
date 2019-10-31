@@ -45,6 +45,18 @@ export class DataService {
             authorId: 3,
             description: "How are you",
             author: "Nikki"
+          },
+          {
+            commentsId: "1",
+            authorId: 3,
+            description: "How are you",
+            author: "Nikki"
+          },
+          {
+            commentsId: "1",
+            authorId: 3,
+            description: "How are you",
+            author: "Nikki"
           }
         ],
         likes: [
