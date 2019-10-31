@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app.routing.module';
 import { HomecComponent } from './homec/homec.component';
 import { ActivitycComponent } from './activityc/activityc.component';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, AppRoutingModule ],
