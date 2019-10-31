@@ -23,8 +23,8 @@ export class HomecComponent implements OnInit {
     this.articleData = JSON.parse(localStorage.getItem("articleData"));
   }
 
-  // setLocalStorage() {
-  //   localStorage.setItem("articleData", JSON.stringify(this.articleData));
-  // }
+  setLocalStorage() {
+    localStorage.setItem("articleData", JSON.stringify(this.articleData));
+  }
 
 }
