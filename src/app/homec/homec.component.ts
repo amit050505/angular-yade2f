@@ -10,8 +10,8 @@ export class HomecComponent implements OnInit {
 
   constructor(public dataService: DataService) {}
   articleData: any;
-  userId = 10;
-  userName = "admin";
+  userId = 7866;
+  userName = "User45662";
   message: any;
 
 
