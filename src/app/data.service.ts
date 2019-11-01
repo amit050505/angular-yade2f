@@ -107,6 +107,48 @@ export class DataService {
             author: "Reddy"
           }
         ]
+      },
+
+        {
+        articleName: "Our democrazy: Sane, Sena, sanest",
+        articleId: "3",
+        author: "Bachi Karkaria",
+        authorId: 349,
+        poster:"https://www.thoughtco.com/thmb/BNOyx6_VCj-_Wy8OD5MhtPxlovc=/768x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/repdem-5c92359446e0fb00014a97c1.jpg",
+        description: "Just look at the poll toll. Once-swaggering parties and pundits are now tol-mol kar baat karoing. In fact, the wayward results have made word-weighers wish that the wisdom of hindsight had been that of foresight. Aam aurats like me find their discomfiture quite juicy, mainly the fact that the alpha alphonso began langda-limping. But i’m still scratching my head since logic has gone into sirshasana. Consider the conundrum: Winner parties have a hang-dog look,Beleaguered and belittled Sharad Pawar thundered to victory, drenched in rain and revenge. Imagine the irony: the old war-horse’s come-back has given come-uppance to our original Commander-in-Chief ever ready, willing and able to do battle against the terrorists, their minder and his own rivals. ",
+        dislikes: [
+          {
+            likesId: "1",
+            authorId: 3,
+            author: "Nikki"
+          },
+          {
+            likesId: "2",
+            authorId: 1,
+            author: "John"
+          }
+        ],
+        imagepath: "src/images/noImage.jpg",
+        comments: [
+          {
+            commentsId: "1",
+            authorId: 3,
+            description: "Write something of this sort on Mohammad, his eife, Ayesha, the Khalifas etc anc then see what happens to you.",
+            author: "Adam levine"
+          }
+        ],
+        likes: [
+          {
+            likesId: "1",
+            authorId: 1,
+            author: "John"
+          },
+          {
+            likesId: "2",
+            authorId: 2,
+            author: "Reddy"
+          }
+        ]
       }
     ];
 
