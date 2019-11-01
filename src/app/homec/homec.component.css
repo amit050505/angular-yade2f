@@ -5,7 +5,6 @@
    -moz-box-shadow: 0 10px 10px -10px #000000;
         box-shadow: 0 10px 10px -10px #000000;margin-bottom: 20px;
 }
-
 .example-header-image {
   background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
   background-size: cover;
@@ -22,7 +21,6 @@
 }
 .blog-info {
   color: rgb(72, 115, 145);
-  /* padding-left: 16px; */
 } 
 .mat-card-footer {
   padding: 0px 0px 20px 20px;

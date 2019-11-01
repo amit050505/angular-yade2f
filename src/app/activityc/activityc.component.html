@@ -3,8 +3,7 @@
 <mat-tab-group>
   <mat-tab>
     <ng-template mat-tab-label>
-      <!-- <mat-kicon class="example-tab-icon">thumb_up</mat-icon> -->
-      Likes
+      <i class="fa fa-thumbs-up" aria-hidden="true"></i>Likes
     </ng-template>
 
     <div *ngFor="let art of likesByMe">
@@ -22,8 +21,7 @@
 
   <mat-tab>
     <ng-template mat-tab-label>
-      <!-- <mat-icon class="example-tab-icon">thumb_up</mat-icon> -->
-      Dislikes
+      <i class="fa fa-thumbs-down" aria-hidden="true"></i>Dislikes
     </ng-template>
       <div *ngFor="let art of dislikesByMe">
           <mat-card class="example-card">
@@ -38,8 +36,7 @@
 
   <mat-tab>
     <ng-template mat-tab-label>
-      <!-- <mat-icon class="example-tab-icon">thumb_up</mat-icon> -->
-      Comments
+       <i class="fa fa-commenting-o" aria-hidden="true"></i>Comments
     </ng-template>
      <div *ngFor="let art of commentsByMe">
           <mat-card class="example-card">
