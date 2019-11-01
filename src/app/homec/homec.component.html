@@ -43,7 +43,8 @@
       </mat-panel-title>
     </mat-expansion-panel-header>
     <div *ngFor="let comment of data.comments">
-      <b>{{comment.author}}</b>
+      <b>{{comment.author}}</b> &nbsp;
+      <i *ngIf="comment.authorId == userId" class="fa fa-times" aria-hidden="true"  style="color:red;" (click)="onDelete(comment.commentsId, data.articleId);"></i>
       <p><i>{{comment.description}}</i></p>
     </div> 
     <form #commForm = "ngForm" (ngSubmit) = "onClickSubmit(commForm, data.articleId)" >

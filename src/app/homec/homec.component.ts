@@ -147,4 +147,21 @@ export class HomecComponent implements OnInit {
     return Math.floor(Math.random() * Math.floor(max));
   }
 
+    onDelete(comId, artId) {
+    let counter = 0;
+    this.articleData.forEach(childObj => {
+      if (artId == childObj.articleId) {
+        const comments = childObj.comments;
+        comments.forEach((dLike, index) => {
+          if (dLike.commentsId == comId) {
+            comments.splice(index, 1);
+          }
+        });
+        this.articleData[counter].comments = comments;
+      }
+      counter++;
+    });
+    this.setLocalStorage();
+  }
+
 }
