@@ -19,7 +19,7 @@ export class ActivitycComponent implements OnInit {
 
   ngOnInit() {
     this.getArticle();
-    this.likesByMe = [];
+    // this.likesByMe = [];
   }
 
   getArticle() {

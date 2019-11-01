@@ -6,9 +6,15 @@
       <!-- <mat-kicon class="example-tab-icon">thumb_up</mat-icon> -->
       Likes
     </ng-template>
-    
-    likesByMe -- {{likesByMe.length}}
+
     <div *ngFor="let art of likesByMe">
+    <mat-card class="example-card">
+      <mat-card-header>  
+        <mat-card-subtitle>
+              {{art.articleName}}
+        </mat-card-subtitle>
+      </mat-card-header>
+    </mat-card>
     
     </div>
 

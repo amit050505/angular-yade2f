@@ -1,0 +1,7 @@
+.mat-card {
+    padding: 0px 10px;
+    margin: 20px;
+    -webkit-box-shadow: 0 10px 10px -10px #000000;
+    -moz-box-shadow: 0 10px 10px -10px #000000;
+    box-shadow: 0 10px 10px -10px #000000;
+}
