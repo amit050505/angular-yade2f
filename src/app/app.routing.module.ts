@@ -9,7 +9,7 @@ const appRoutes: Routes = [
   { path: 'home', component: HomecComponent },
   { path: 'activity', component: ActivitycComponent },
  
-  { path: '',   redirectTo: '/activity', pathMatch: 'full' }
+  { path: '',   redirectTo: '/home', pathMatch: 'full' }
 ];
 
 @NgModule({
