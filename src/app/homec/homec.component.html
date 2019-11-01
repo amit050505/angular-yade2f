@@ -7,7 +7,7 @@
     <div class="blog-info">
     <i class="fa fa-thumbs-up" aria-hidden="true"></i> {{likeCounter(data.articleId)}}
     <i class="fa fa-thumbs-down" aria-hidden="true"></i> {{deslikeCounter(data.articleId)}}
-    <i class="fa fa-share-alt" aria-hidden="true"></i> {{commentsCounter(data.articleId)}}
+    <i class="fa fa-commenting-o" aria-hidden="true"></i> {{commentsCounter(data.articleId)}}
     </div>
     </mat-card-title>
   </mat-card-header>
@@ -46,18 +46,9 @@
       <b>{{comment.author}}</b>
       <p><i>{{comment.description}}</i></p>
     </div> 
-    <!-- <form class="example-form" #commForm="ngForm" (ngSubmit)="onSubmit(commForm.value, data.articleId)">
-      <mat-form-field class="example-full-width">
-        <textarea matInput class="form-control" id="message" name="message" placeholder="Leave a comment" ></textarea>
-      </mat-form-field>
-      <button mat-raised-button type="submit">Send</button>
-    </form> -->
     <form #commForm = "ngForm" (ngSubmit) = "onClickSubmit(commForm, data.articleId)" >
-        <!-- <mat-form-field class="example-full-width">
-          <input type = "text" name = "emailid" placeholder = "emailid" ngModel>
-        </mat-form-field> -->
         <mat-form-field class="example-full-width">
-              <input type = "text" matInput name = "commentText" placeholder = "emailid" ngModel>
+              <input type = "text" matInput name = "commentText" placeholder = "Post a comment" ngModel>
         </mat-form-field>
         <button mat-raised-button type="submit">Send</button>
     </form>
