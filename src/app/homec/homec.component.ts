@@ -123,5 +123,28 @@ export class HomecComponent implements OnInit {
     });
     this.setLocalStorage();
   }
+  
+   onClickSubmit(data, artId ) {
+        console.log(data);
+        let counter = 0;
+        this.articleData.forEach(childObj => {
+          if (artId == childObj.articleId) {
+            const obj = {
+              commentsId: this.getRandomInt(9999),
+              description: data.value.commentText,
+              authorId: this.userId,
+              author: this.userName
+            };
+            this.articleData[counter].comments.push(obj);
+          }
+          counter++;
+        });
+        data.control.reset();
+        this.setLocalStorage();
+      }
+
+  getRandomInt(max) {
+    return Math.floor(Math.random() * Math.floor(max));
+  }
 
 }
