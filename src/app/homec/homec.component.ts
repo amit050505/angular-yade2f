@@ -9,7 +9,7 @@ import { DataService } from '../data.service';
 export class HomecComponent implements OnInit {
 
   constructor(public dataService: DataService) {}
-  
+
   articleData: any;
   userId = 7866;
   userName = "User45662";
@@ -117,6 +117,7 @@ export class HomecComponent implements OnInit {
   }
   
   onClickSubmit(data, artId ) {
+    var today = this.getCurrentTimeStamp();
         console.log(data);
         let counter = 0;
         this.articleData.forEach(childObj => {
@@ -125,7 +126,8 @@ export class HomecComponent implements OnInit {
               commentsId: this.getRandomInt(9999),
               description: data.value.commentText,
               authorId: this.userId,
-              author: this.userName
+              author: this.userName,
+              timestamp: today
             };
             this.articleData[counter].comments.push(obj);
           }
@@ -133,6 +135,13 @@ export class HomecComponent implements OnInit {
         });
         data.control.reset();
         this.setLocalStorage();
+  }
+
+  getCurrentTimeStamp() {
+      var today = new Date();
+      var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+      var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+      return date +', '+time;
   }
 
   getRandomInt(max) {

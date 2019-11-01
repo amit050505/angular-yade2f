@@ -62,6 +62,12 @@ export class ActivitycComponent implements OnInit {
     this.articleData.forEach(function (art) {   
             if(art.comments.some(item => item.authorId == 7866))
             { 
+              const commentItem = art.comments.filter(item => item.authorId == 7866)[0];
+              console.log(commentItem);
+              Object.defineProperty(art, 'timestamp', {
+                value: commentItem.timestamp,
+                writable: false
+              });
               arr.push(art);
             }
           });
