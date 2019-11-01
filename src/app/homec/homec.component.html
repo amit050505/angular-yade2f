@@ -3,12 +3,19 @@
 <mat-card class="example-card">
   <mat-card-header>  
     <mat-card-title>
-      <h5>{{data.articleName}}</h5>
-    <div class="blog-info">
-    <i class="fa fa-thumbs-up" aria-hidden="true"></i> {{likeCounter(data.articleId)}}
-    <i class="fa fa-thumbs-down" aria-hidden="true"></i> {{deslikeCounter(data.articleId)}}
-    <i class="fa fa-commenting-o" aria-hidden="true"></i> {{commentsCounter(data.articleId)}}
-    </div>
+      <div class="row">
+          <div class="col-md-3">
+            <img src="https://mdbootstrap.com/img/Others/documentation/img%20(75)-mini.jpg" alt="thumbnail" class="img-thumbnail" style="width: 200px">
+          </div>
+          <div class="col-md-9">  
+              <h5>{{data.articleName}}</h5>
+              <div class="blog-info">
+              <i class="fa fa-thumbs-up" aria-hidden="true"></i> {{likeCounter(data.articleId)}}
+              <i class="fa fa-thumbs-down" aria-hidden="true"></i> {{deslikeCounter(data.articleId)}}
+              <i class="fa fa-commenting-o" aria-hidden="true"></i> {{commentsCounter(data.articleId)}}
+              </div>
+          </div>
+      </div>
     </mat-card-title>
   </mat-card-header>
 
