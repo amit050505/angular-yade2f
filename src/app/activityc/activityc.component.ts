@@ -25,11 +25,8 @@ export class ActivitycComponent implements OnInit {
   }
 
    getLikesMadeByMe(userId) {
-     debugger; 
         console.log(userId);
         console.log(this.articleData);
-
-
           this.articleData.forEach(function (art) {   
             console.log(art);        
             if(art.likes.some(item => item.authorId == 7866))
