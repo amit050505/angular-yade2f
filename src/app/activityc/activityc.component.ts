@@ -25,7 +25,7 @@ export class ActivitycComponent implements OnInit {
   }
 
    getLikesMadeByMe(userId) {
-     debugger;
+     debugger; 
         console.log(userId);
         console.log(this.articleData);
 
