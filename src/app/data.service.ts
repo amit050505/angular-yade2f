@@ -118,14 +118,29 @@ export class DataService {
         description: "Just look at the poll toll. Once-swaggering parties and pundits are now tol-mol kar baat karoing. In fact, the wayward results have made word-weighers wish that the wisdom of hindsight had been that of foresight. Aam aurats like me find their discomfiture quite juicy, mainly the fact that the alpha alphonso began langda-limping. But i’m still scratching my head since logic has gone into sirshasana. Consider the conundrum: Winner parties have a hang-dog look,Beleaguered and belittled Sharad Pawar thundered to victory, drenched in rain and revenge. Imagine the irony: the old war-horse’s come-back has given come-uppance to our original Commander-in-Chief ever ready, willing and able to do battle against the terrorists, their minder and his own rivals. ",
         dislikes: [
           {
-            likesId: "1",
-            authorId: 3,
+            likesId: "1232",
+            authorId: 3333,
             author: "Nikki"
+          },
+          {
+            likesId: "2454232",
+            authorId: 1342,
+            author: "mark"
+          },
+          {
+            likesId: "44545",
+            authorId: 45,
+            author: "Neeta"
+          },
+          {
+            likesId: "45",
+            authorId: 145,
+            author: "Alex"
           },
           {
             likesId: "2",
             authorId: 1,
-            author: "John"
+            author: "Narine"
           }
         ],
         imagepath: "src/images/noImage.jpg",
@@ -135,6 +150,18 @@ export class DataService {
             authorId: 3,
             description: "Write something of this sort on Mohammad, his eife, Ayesha, the Khalifas etc anc then see what happens to you.",
             author: "Adam levine"
+          },
+           {
+            commentsId: "145",
+            authorId: 343,
+            description: "iT IS SORRY STATE OF AFFAIR IN MAHARASHTRA THAT GOVT FORMATION IS DELAYED DESPITE STATE IS FACING SERIOUS ISSUES, DEBT HAS SIGNIFICANTLY INCREASED",
+            author: "Alex"
+          },
+           {
+            commentsId: "1342",
+            authorId: 3212,
+            description: "the NSO Group was founded by Israeli military veterans once they moved into the private sector following stints in Israel’s army",
+            author: "Goerge levine"
           }
         ],
         likes: [
