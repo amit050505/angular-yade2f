@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ActivitycComponent implements OnInit {
   
   articleData: any;
-  likesByMe: any[];
+  likesByMe: any[] = [];
   dilikesByMe = 0;
   commentsByMe = 0;
 
@@ -32,6 +32,7 @@ export class ActivitycComponent implements OnInit {
             if(art.likes.some(item => item.authorId == 7866))
             { 
               console.log('contains');
+              this.likesByMe.push(art);
             }
           });
 

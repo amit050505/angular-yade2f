@@ -62,7 +62,7 @@ export class DataService {
           },
           {
             likesId: "2",
-            authorId: 2,
+            authorId: 7866,
             author: "Reddy"
           }
         ]
