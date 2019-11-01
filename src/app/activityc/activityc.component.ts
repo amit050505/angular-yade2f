@@ -29,7 +29,7 @@ export class ActivitycComponent implements OnInit {
             if(art.likes.some(item => item.authorId == 7866))
             { 
               console.log('contains');
-              // this.likesByMe++;
+              this.likesByMe++;
               counter++;
             }
           });

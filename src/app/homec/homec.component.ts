@@ -9,6 +9,7 @@ import { DataService } from '../data.service';
 export class HomecComponent implements OnInit {
 
   constructor(public dataService: DataService) {}
+  
   articleData: any;
   userId = 7866;
   userName = "User45662";
@@ -21,21 +22,12 @@ export class HomecComponent implements OnInit {
 
   getArticle() {
     this.articleData = JSON.parse(localStorage.getItem("articleData"));
-  
   }
 
   setLocalStorage() {
     localStorage.setItem("articleData", JSON.stringify(this.articleData));
   }
-  onLike(artId) {
-
-
-
-  }
-
-  onDeslike(artId) {
-
-  }
+  
   likeCounter(artId) {
     const item = this.articleData.filter(function(v){
     return v.articleId === artId;
@@ -124,7 +116,7 @@ export class HomecComponent implements OnInit {
     this.setLocalStorage();
   }
   
-   onClickSubmit(data, artId ) {
+  onClickSubmit(data, artId ) {
         console.log(data);
         let counter = 0;
         this.articleData.forEach(childObj => {
@@ -141,13 +133,13 @@ export class HomecComponent implements OnInit {
         });
         data.control.reset();
         this.setLocalStorage();
-      }
+  }
 
   getRandomInt(max) {
     return Math.floor(Math.random() * Math.floor(max));
   }
 
-    onDelete(comId, artId) {
+  onDelete(comId, artId) {
     let counter = 0;
     this.articleData.forEach(childObj => {
       if (artId == childObj.articleId) {
