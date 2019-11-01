@@ -82,7 +82,7 @@ export class DataService {
           },
           {
             likesId: "2",
-            authorId: 1,
+            authorId: 7866,
             author: "John"
           }
         ],
@@ -90,7 +90,7 @@ export class DataService {
         comments: [
           {
             commentsId: "1",
-            authorId: 3,
+            authorId: 7866,
             description: "Write something of this sort on Mohammad, his eife, Ayesha, the Khalifas etc anc then see what happens to you.",
             author: "Adam levine"
           }
@@ -119,7 +119,7 @@ export class DataService {
         dislikes: [
           {
             likesId: "1232",
-            authorId: 3333,
+            authorId: 7866,
             author: "Nikki"
           },
           {
@@ -147,7 +147,7 @@ export class DataService {
         comments: [
           {
             commentsId: "1",
-            authorId: 3,
+            authorId: 7866,
             description: "Write something of this sort on Mohammad, his eife, Ayesha, the Khalifas etc anc then see what happens to you.",
             author: "Adam levine"
           },

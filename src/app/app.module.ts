@@ -12,9 +12,11 @@ import { DataService} from './data.service';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatSidenavModule } from '@angular/material/sidenav';
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule, AppRoutingModule, MatCardModule, MatExpansionModule, BrowserAnimationsModule, MatInputModule, MatButtonModule ],
+  imports:      [ BrowserModule, FormsModule, AppRoutingModule, MatCardModule, MatExpansionModule, BrowserAnimationsModule, MatInputModule, MatButtonModule, MatTabsModule, MatSidenavModule ],
   declarations: [ AppComponent, HomecComponent, ActivitycComponent ],
   bootstrap:    [ AppComponent ],
   providers: [ HttpClientModule, HttpClient, HttpHandler, DataService ]
