@@ -129,7 +129,7 @@ export class HomecComponent implements OnInit {
               author: this.userName,
               timestamp: today
             };
-            this.articleData[counter].comments.push(obj);
+            this.articleData[counter].comments.unshift(obj);
           }
           counter++;
         });

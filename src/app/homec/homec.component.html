@@ -51,14 +51,14 @@
     </mat-expansion-panel-header>
     <div *ngFor="let comment of data.comments">
       <b>{{comment.author}}</b> &nbsp;
-      <i *ngIf="comment.authorId == userId" class="fa fa-times" aria-hidden="true"  style="color:red;" (click)="onDelete(comment.commentsId, data.articleId);"></i>
+      <i *ngIf="comment.authorId == userId" class="fa fa-times" aria-hidden="true"  style="color:red; float: right" (click)="onDelete(comment.commentsId, data.articleId);"></i>
       <p><i>{{comment.description}}</i></p>
     </div> 
     <form #commForm = "ngForm" (ngSubmit) = "onClickSubmit(commForm, data.articleId)" >
         <mat-form-field class="example-full-width">
               <input type = "text" matInput name = "commentText" placeholder = "Post a comment" ngModel>
         </mat-form-field>
-        <button mat-raised-button type="submit">Send</button>
+        <button mat-raised-button type="submit">Post</button>
     </form>
   </mat-expansion-panel>
 </mat-accordion>
