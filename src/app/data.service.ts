@@ -79,11 +79,6 @@ export class DataService {
             likesId: "1",
             authorId: 3,
             author: "Nikki"
-          },
-          {
-            likesId: "2",
-            authorId: 7866,
-            author: "User45662"
           }
         ],
         imagepath: "src/images/noImage.jpg",
