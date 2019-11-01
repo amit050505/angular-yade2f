@@ -9,8 +9,6 @@ export class ActivitycComponent implements OnInit {
   userId = 7866;  
   articleData: any;
   likesByMe = 0;
-  dilikesByMe = 0;
-  commentsByMe = 0;
 
   constructor() { 
     this.getArticle();
