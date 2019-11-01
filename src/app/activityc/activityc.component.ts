@@ -11,7 +11,8 @@ export class ActivitycComponent implements OnInit {
   userId = 7866;  
   articleData: any;
   likesByMe: any;
-
+  dislikesByMe: any;
+  commentsByMe: any;
   constructor(public dataService: DataService) { 
     
     
@@ -19,7 +20,6 @@ export class ActivitycComponent implements OnInit {
 
   ngOnInit() {
     this.getArticle();
-    // this.likesByMe = [];
   }
 
   getArticle() {
@@ -29,21 +29,45 @@ export class ActivitycComponent implements OnInit {
 
   getLikesMadeByMe(userId) {
      let counter = 0;
-     this.likesByMe = this.getcount();
+     this.likesByMe = this.getcountOfLikes();
+     this.dislikesByMe = this.getcountOfDisikes();
+     this.commentsByMe = this.getcountOfComments();
      console.log(this.likesByMe.length);
   }
 
-  getcount() {
+  getcountOfLikes() {
     let arr = [];
     this.articleData.forEach(function (art) {   
             if(art.likes.some(item => item.authorId == 7866))
             { 
-              // console.log('contains');
               arr.push(art);
             }
           });
-          // console.log(arr);
           return arr;
   }
+
+   getcountOfDisikes() {
+    let arr = [];
+    this.articleData.forEach(function (art) {   
+            if(art.dislikes.some(item => item.authorId == 7866))
+            { 
+              arr.push(art);
+            }
+          });
+          return arr;
+  }
+
+   getcountOfComments() {
+    let arr = [];
+    this.articleData.forEach(function (art) {   
+            if(art.comments.some(item => item.authorId == 7866))
+            { 
+              arr.push(art);
+            }
+          });
+          return arr;
+  }
+
+  
 
 }

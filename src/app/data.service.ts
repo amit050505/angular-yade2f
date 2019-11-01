@@ -63,7 +63,7 @@ export class DataService {
           {
             likesId: "2",
             authorId: 7866,
-            author: "Reddy"
+            author: "User45662"
           }
         ]
       },
@@ -83,7 +83,7 @@ export class DataService {
           {
             likesId: "2",
             authorId: 7866,
-            author: "John"
+            author: "User45662"
           }
         ],
         imagepath: "src/images/noImage.jpg",
@@ -91,8 +91,9 @@ export class DataService {
           {
             commentsId: "1",
             authorId: 7866,
-            description: "Write something of this sort on Mohammad, his eife, Ayesha, the Khalifas etc anc then see what happens to you.",
-            author: "Adam levine"
+            author: "User45662",
+            description: "Write something of this sort on Mohammad, his eife, Ayesha, the Khalifas etc anc then see what happens to you."
+            
           }
         ],
         likes: [
@@ -104,7 +105,7 @@ export class DataService {
           {
             likesId: "2",
             authorId: 7866,
-            author: "Reddy"
+            author: "User45662"
           }
         ]
       },
@@ -120,7 +121,7 @@ export class DataService {
           {
             likesId: "1232",
             authorId: 7866,
-            author: "Nikki"
+            author: "User45662"
           },
           {
             likesId: "2454232",
@@ -147,7 +148,7 @@ export class DataService {
         comments: [
           {
             commentsId: "1",
-            authorId: 7866,
+            authorId: 786,
             description: "Write something of this sort on Mohammad, his eife, Ayesha, the Khalifas etc anc then see what happens to you.",
             author: "Adam levine"
           },
